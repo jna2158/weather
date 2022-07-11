@@ -1,5 +1,6 @@
 import React from "react";
 import Today from "./Today";
+import Search from "./Search";
 import "./App.css";
 
 export default function App() {
@@ -8,7 +9,7 @@ export default function App() {
       <div id="center">
         <div id="top">
           <Today />
-          {/* <Search /> */}
+          <Search />
         </div>
         <div id="bottom">{/* <Weather /> */}</div>
       </div>
