@@ -1,9 +1,9 @@
-import React from "react";
 import Today from "./Today";
 import Search from "./Search";
+import Weather from "./weather/Weather";
 import "./App.css";
 
-export default function App() {
+const App = () => {
   return (
     <div id="wrap">
       <div id="center">
@@ -11,9 +11,13 @@ export default function App() {
           <Today />
           <Search />
         </div>
-        <div id="bottom">{/* <Weather /> */}</div>
+        <div id="bottom">
+          <Weather />
+        </div>
       </div>
       <div id="right">{/* <WeatherDetails /> */}</div>
     </div>
   );
-}
+};
+
+export default App;

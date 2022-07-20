@@ -1,11 +1,11 @@
-import * as React from "react";
+import { useState } from "react";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 
-export default function Search() {
-  const [country, setCountry] = React.useState("");
+const Search = () => {
+  const [country, setCountry] = useState("");
 
   const handleChange = (event: SelectChangeEvent) => {
     setCountry(event.target.value);
@@ -22,4 +22,6 @@ export default function Search() {
       </FormControl>
     </>
   );
-}
+};
+
+export default Search;

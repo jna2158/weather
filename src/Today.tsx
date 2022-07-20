@@ -1,15 +1,6 @@
 import "./Today.css";
 
-export default function Today() {
-  // const obj: object = {
-  //   0: "Sunday",
-  //   1: "Monday",
-  //   2: "Tuesday",
-  //   3: "Wednesday",
-  //   4: "Thursday",
-  //   5: "Friday",
-  //   6: "Saturday",
-  // };
+const Today = () => {
   const arr = [
     "Sunday",
     "Monday",
@@ -30,4 +21,6 @@ export default function Today() {
     return `${arr[day]}, ${month}th ${date} ${year}`;
   };
   return <div>{getDate()}</div>;
-}
+};
+
+export default Today;
