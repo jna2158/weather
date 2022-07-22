@@ -16,8 +16,8 @@ const Search = () => {
         <InputLabel>Search</InputLabel>
         <Select value={country} label="Search" onChange={handleChange}>
           <MenuItem value={"Seoul"}>Seoul</MenuItem>
-          <MenuItem value={"Seoull"}>Seoull</MenuItem>
-          <MenuItem value={"Seoulll"}>Seoulll</MenuItem>
+          <MenuItem value={"tokyo"}>tokyo</MenuItem>
+          <MenuItem value={"USA"}>USA</MenuItem>
         </Select>
       </FormControl>
     </>
